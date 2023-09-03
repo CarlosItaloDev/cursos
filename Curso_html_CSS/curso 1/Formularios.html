@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <style>body{font-family: 'Times New Roman', Times, serif;}</style>
+    <script></script>
+</head>
+<body>
+    <h2>Login</h2>
+    <form action="https://sys4soft.com/udemy/forms/index.php" method="post"> <!--tag para entrada de dados do formulário-->
+        Login<br>
+        <input type="text" name="usuário" required><br> <!--name funciona para recuperação de dados e aparece 
+        na url de destino como pode ser visto ao preencher e submeter-->
+        Senha<br> <!--apenas para demonstração pois a senha é apresentada na url após submissão-->
+        <input type="password" name="pass" required> <br><!--É interessante que o tipo 
+            seja específico para senha, desta forma dará mais segurança da informação-->
+        <input type="submit" value="Logar" style="margin-top: 5px"> <!--submit envia informação 
+        (necessita de liguagem de programação) e value é o texto que ficará neste-->
+
+    </form>
+    <hr>
+    <h2>Cadastre-se</h2>
+    <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+    <fieldset>
+        <legend>Cadastro</legend>
+        Login:<br>
+        <input type="text" name="usuário" required><br><br>
+        sexo:<br>
+        <input type="radio" name="sexo" value="M">Masculino<br><!--o value permite torna-se dado par armazenar-->
+        <input type="radio" name="sexo" value="F">Feminino<br><br><!--É importante colocar o mesmo nome nos 
+        input, pois caso contrário será possível marcar ambos-->
+        Interesses:<br>
+        <input type="checkbox" name="futebol" value="sim">Futebol
+        <br>
+        <input type="checkbox" name="arte" value="sim">Arte
+        <br>
+        <input type="checkbox" name="moda" value="sim">Moda
+        <br>
+        Estado:<br>
+        <select name="Estado" required>
+            <Optgroup label="Estado">
+                <option value="">Selecionar</option>
+                <option value="sp">SP</option>
+                <option value="ce">CE</option>
+                <option value="pb">PB</option>
+                <option value="mg">MG</option>
+                <option value="rj">RJ</option>
+            </Optgroup>
+        </select><br><br>    
+        Observações:<br>
+        <textarea> 
+
+        </textarea><br>
+        <input type="submit" value="cadastrar" style="margin-top: 3px;">
+    </fieldset>
+    </form>
+    
+</body>
+</html>

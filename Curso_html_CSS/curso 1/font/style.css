@@ -1,0 +1,17 @@
+/*Folha de estilo CSS*/
+@font-face {
+    font-family: "orbitron";
+    src: url("font/Orbitron/Orbitron-VariableFont_wght.ttf");
+}
+
+.nova-fonte{
+    font-family: "orbitron";
+}
+.nova-fonte-link{
+    font-family:'Oswald', sans-serif;
+}
+
+
+/**/
+/**/
+/**/

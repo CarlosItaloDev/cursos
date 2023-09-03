@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Tabela</title>
+        <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        table,th,tr,td{
+            font-family: Arial, Helvetica, sans-serif;
+            border: 2px solid red;
+            width: 50%;
+            border-collapse: collapse;}
+        .cor-de-fundo{
+            background-color: yellow;
+        }
+        .cor-de-fundo2{
+            background-color: green;
+
+        }
+        </style>
+        <script></script>
+
+    </head>
+    <body>
+        <h2>Tabela</h2> <!--os atributos em branco (como em table) estão obsoletos e são colocados no css no style-->
+        <table> 
+            <caption>Descrição para tabela</caption><!--a largura de 100% ocupa toda a página
+        mas poderia também ser definida em pixel-->
+            <colgroup>
+                <col span="2"class="cor-de-fundo">
+                <col>
+                <col>
+                <col class="cor-de-fundo2">
+            </colgroup>
+            <thead>
+                <tr><!--tr é tabler row que significa linha da tabela-->
+                    <th>1a</th> <!--table head que significa cabeçalho da tabela-->
+                    <th>2b</th>
+                    <th>3c</th>
+                    <th>4d</th>
+                    <th>5e</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><!--são as linhas-->
+                    <td>aa</td><!--table date que significa dados da tabela-->
+                    <td> <img src="imagens/download.jpeg" alt="google" width="100px"></td>
+                    <!--É possível inserir imagens dentro de uma tabela-->
+                    <td>ac</td><!--são as colunas-->
+                    <td>ad</td>
+                    <td>ae</td> 
+                </tr>
+                <tr>
+                    <td rowspan="2">ba</td> <!--rowspan é extensão de linha em 2 celúlas no exemplo-->
+                    <td><a href="http://www.google.com.br">ca</a></td><!--É possível também inserir link-->
+                    <td>da</td>
+                    <td>ea</td>
+                    <td>fa</td>
+                </tr><!--cada tr corresponde a uma a uma nova linha da tabela-->
+                <tr>
+                    <td>cb</td>
+                    <td colspan="3">cd</td> <!--colspan é extensão de coluna (mesclar)
+                    seguido "3"que seria 3 células-->
+                    
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><small>rodapé1</small></td>
+                    <td><small>rodapé2</small></td>
+                    <td><small>rodapé3</small></td>
+                    <td><small>rodapé4</small></td>
+                    <td><small>rodapé5</small></td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+
+</html>

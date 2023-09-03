@@ -1,0 +1,70 @@
+/*style para nav*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+nav{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: rgb(21, 11, 165);
+    height: 20%;
+}
+nav a{
+    text-decoration: none;
+    border: 1px solid rgb(117, 116, 116);
+    border-radius: 50px;
+    padding: 10px 60px;
+    color:white
+}
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgb(13, 13, 17);
+
+}
+section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+    height: 50%;
+    background-color: black;
+    color: white;
+}
+section div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgb(95, 94, 94);
+    padding: 30px;
+    border: 1px solid rgb(148, 146, 146);
+    border-radius: 10px;
+    margin: 50px 0px;
+
+}
+section div img{
+    width: 50px;
+
+}
+section div p{
+    margin-top: 40px;
+    color: lightgray;
+}
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: blue;
+    font-weight: bold;
+    margin-top: 50px;
+}
+footer small{
+    color: gray;
+}

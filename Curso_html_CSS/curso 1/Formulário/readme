@@ -1,0 +1,10 @@
+Sobre os formulários em HTML:
+-As validações em html não são seguras, pois no "inspecionar" podemos alterar
+as requisições e fazer o envio para o servidor.
+-Possível usá-la como primeiro layer de validação.
+-Pode usar validações com JS, mas também não é seguro,
+pois é feita do lado do clente, a validação mais segura
+são executadas pelo servidor.
+Como validar um formulário:
+-Pode utilizar camadas
+com html, JS e por último do lado do servidor

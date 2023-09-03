@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link type="stylesheet" src="style.css">
+</head>
+<body>
+    <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+        <!--o method get apresenta o histórico no endereço de envio, é menos utilizado
+        por este não se pode enviar dado sensível, diferente ao que ocorre com o method
+        post-->
+        <Section>
+            <Header>
+            <h1>Cabeça</h1>
+            </Header>
+            <p>formulário</p>
+            <fieldset> <!--agrupa formulário-->
+                <p>
+                <label for="nome">Nome</label> <!--for vincula a uma id-->
+                <input type="text" id="nome" name="usuário" placeholder="seu nome"> <!--name tem importância para o back end>-->
+                </p>
+                <p>
+                <button type="submit">Enviar</button> 
+                <button type="reset">Apagar</button> 
+                </p>
+            </fieldset>
+        </Section>
+
+    </form>
+    
+</body>
+</html>

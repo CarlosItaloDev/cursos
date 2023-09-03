@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo</title>
+</head>
+
+<body>
+    <h1>Incluindo um vídeo do youtube</h1>
+
+    <p>Para incluir um vídeo no youtube faremos o seguinte:</p>
+    <ol type="1">
+        <li>Acessamos o site do youtube;</li>
+        <li>Vamos no botão de compartilhar;</li>
+        <li>Clicamos em embed (incorporar);</li>
+        <li>Copiamos toda a tag proposta;</li>
+        <li>Escolhemos se queremos que o vídeo se inicie de um 
+            determinado ponto em "start at";</li>
+        <li>Cola o código copiado no body, na região especificamente
+            que deseja que o video seja reproduzido.</li>
+    </ol>
+    <p>Vejamos um exemplo:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4pgdLCu-8zs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>
+        Porém é ideal que você mesmo inclua um vídeo de uma de suas pastas, pois
+        um vídeo externo, tal qual as imagens dependem de outros servidores e
+        administradores. Para incluir um vídeo próprio segue o código de referência:
+        <pre>
+            &lt;video width="320" height="240" controls&gt;
+            &lt;source src="movie.mp4" type="video/mp4"&gt;
+            &lt;source src="movie.ogg" type="video/ogg"&gt;
+            &lt;Your browser does not support the video tag.&gt;
+            &lt;/video&gt;
+        </pre>
+    </p>
+
+</body>
+</html>

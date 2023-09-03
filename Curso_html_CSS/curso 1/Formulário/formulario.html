@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Curso HTML5 Essencial</title>
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+    </head>
+
+    <body>
+        
+        <h2>Formulário</h2>
+        <!--action seria o servidor de destino-->
+
+        <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+            <fieldset>
+
+                <input type="text" list="loja" name="nome_loja" id="nome_loja" size="30" placeholder="Encontre sua loja" required>
+                <!--o atributo list que é o que vincula ao datalist-->
+                <datalist id="loja">
+                    <option value="Centauro">Centauro</option>
+                    <option value="Americanas">Americanas</option>
+                    <option value="Carrefour">Carrefour</option>
+                    <option value="Extra">Extra</option>
+                </datalist>
+                <label for="nome">Nome completo</label> <!--a tag label se comunica ao id do input-->
+                <input type="text" name="nome" id="nome" size="50" minlength="10" maxlength="100" required autofocus placeholder="Insira seu nome"> <!--size tamanho de caracteres apresentáveis
+                    e maxlength quantidade máxima de caracteres-->
+                    <!--o autofocus inicia a página com a barra de digitação para o campo
+                    que será primeiro preenchido-->
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" size="30" maxlength="40" required placeholder="insira seu telefone">
+                    <!--O placeholder apresenta um texto dentro do local que será digitado, por conta disso
+                    geralmente eé descartado o label-->
+                <label for="email">e-Mail</label>
+                <input type="email" name="email" id="email" size="30" maxlength="60" required placeholder="insira seu email">
+
+                <label for="website">website</label>
+                <input type="url" name="website" id="website" size="40" maxlength="60" required placeholder="insira ser site">
+                <label for="numero">Quantos anos você tem?</label>
+                <input type="number" name="idade" id="numero" min="18" max="150" value="18"> 
+                <!--o value para o exemplo do atributo number, já insere um valor-->
+                <label for="data">Data de nascimento</label>
+                <input type="date" name="data" id="data">
+                <input type="submit" value="Enviar" id="enviar" name="enviar">
+                <!--No navegador desktop, a apresentação é diferente de um smartfone,
+                pois neste é mais eficiente em ralação aos type dos input-->
+            </fieldset>
+        </form><!--encaminhando ao banco de dados-->
+        <!--incluído o atributo required, os dados são limitados ao tipo
+        e o não preenchido apresenta como obrigatório para o cliente,
+        geralmente esse recurso é elaborado do servidor. -->
+    
+    </body>
+</html>

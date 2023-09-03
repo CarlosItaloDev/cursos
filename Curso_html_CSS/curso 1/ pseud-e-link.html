@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+    <meta charset="utf-8">
+    <title>pseudo-class e pseudo-elementos</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: verdana;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        .layout{
+            margin: 50px;
+            text-align: center;
+            background-color: #333;
+            padding: 50px;
+        }
+        .link{
+            color:#6bcff0
+        }
+        .link:hover/*pseudo-elemento após :*/{
+            color:#ff0; /*ativa a cor do link ao colocar o cursor, interrompe após o visited*/
+        }
+        .link:visited{
+            color:#f0f;
+        }
+        .link:active{
+            color:red/*ativa a cor ao ser clicado*/
+        }
+        p{
+            margin:50px
+
+        }
+        p::first-line/*os dois pontos ativa a pseudo classe*/{
+            color: red;
+        }
+        p::first-letter/*os dois pontos ativa a pseudo classe*/{
+            color: blue;
+            font-size: 60px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <h1>Deseja visitar o site do google? Clique no link seguinte:<a href="http://www.google.com.br" class="link" target="_blank">link para a Google</a></h1>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit asperiores provident dolorum voluptas omnis eius dolor, molestias reiciendis beatae praesentium? Dolore architecto repellat nobis quam debitis inventore quo accusantium cumque.
+        Deleniti minus saepe accusantium consequatur dignissimos, nemo sequi pariatur ratione quas, officia temporibus libero laboriosam soluta vitae dolores porro maiores accusamus, similique ullam tempore sunt vero voluptatem optio! Quia, asperiores.
+    </p>
+
+</body>
+</html>
